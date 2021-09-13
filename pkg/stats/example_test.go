@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/delgoden/bank/pkg/bank/types"
+	"github.com/delgoden/bank/pkg/types"
 )
 
 func ExampleAvg() {

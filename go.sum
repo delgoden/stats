@@ -1,2 +1,4 @@
 github.com/delgoden/bank v0.0.0-20210913100429-964e4421e291 h1:5Qu/SZYuqiKUv8/chH15Fp99J3miPc14N2vtWaQ7+XM=
 github.com/delgoden/bank v0.0.0-20210913100429-964e4421e291/go.mod h1:RoLFNS60glGdvQqTyrd1fyHmDzRzyiE4G//wBaLVd6E=
+github.com/delgoden/bank v0.0.0-20210913110436-9c4a1c98cd7c h1:Qh5QA25M4hPlKlS30614G+bWZTTjs4LZg8BizgBECRk=
+github.com/delgoden/bank v0.0.0-20210913110436-9c4a1c98cd7c/go.mod h1:RoLFNS60glGdvQqTyrd1fyHmDzRzyiE4G//wBaLVd6E=

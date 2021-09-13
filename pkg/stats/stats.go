@@ -1,6 +1,6 @@
 package stats
 
-import "github.com/delgoden/bank/pkg/bank/types"
+import "github.com/delgoden/bank/pkg/types"
 
 // Avg calculates the average payment amount
 func Avg(payments []types.Payment) types.Money {
