@@ -5,14 +5,14 @@ import "github.com/delgoden/bank/v2/pkg/types"
 // Avg calculates the average payment amount
 func Avg(payments []types.Payment) types.Money {
 	avgPayment := types.Money(0)
-	countNotFail := 0
+	countNotFail := types.Money(0)
 	for _, payment := range payments {
 		if payment.Status != types.StatusFail {
 			avgPayment += payment.Amount
 			countNotFail ++
 		}
 	}
-	return avgPayment / types.Money(len(payments))
+	return avgPayment / countNotFail
 }
 
 // TotalInCategory calculates the amount of purchases in a category
