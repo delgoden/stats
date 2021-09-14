@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/delgoden/bank/pkg/types"
+	"github.com/delgoden/bank/v2/pkg/types"
 )
 
 func ExampleAvg() {
@@ -11,16 +11,19 @@ func ExampleAvg() {
 			ID: 1,
 			Amount: 10_000_00,
 			Category: "auto",
+			Status: types.StatusOk,
 		},
 		{
 			ID: 2,
 			Amount: 15_000_00,
 			Category: "auto",
+			Status: types.StatusInProgress,
 		},
 		{
 			ID: 3,
 			Amount: 13_000_00,
 			Category: "auto",
+			Status: types.StatusFail,
 		},
 		{
 			ID: 4,
@@ -42,7 +45,7 @@ func ExampleAvg() {
 	result := Avg(payments)
 	fmt.Println(result)
 
-	// Output: 1383333
+	// Output: 1166666
 }
 
 func ExampleTotalInCategory() {
