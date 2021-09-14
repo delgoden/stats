@@ -45,7 +45,7 @@ func ExampleAvg() {
 	result := Avg(payments)
 	fmt.Println(result)
 
-	// Output: 1166666
+	// Output: 1400000
 }
 
 func ExampleTotalInCategory() {
