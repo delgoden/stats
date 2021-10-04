@@ -26,7 +26,7 @@ func TotalInCategory(payments []types.Payment, category types.Category) types.Mo
 	return paymentsInCategory
 }
 
-// CategoryAvg calculate average sum payment in category
+// CategoriesAvg calculate average sum payment in category
 func CategoriesAvg(payments []types.Payment) map[types.Category]types.Money {
 	answer := make(map[types.Category]types.Money)
 	paymentsInCategory := make(map[types.Category]types.Money)
@@ -43,4 +43,13 @@ func CategoriesAvg(payments []types.Payment) map[types.Category]types.Money {
 		answer[category] /= i
 	}
 	return answer
+}
+
+// PeriodsDynamic compares expenses two periods
+func PeriodsDynamic(first map[types.Category]types.Money, second map[types.Category]types.Money) map[types.Category]types.Money {
+	result := second
+	for category, money := range first {
+		result[category] -= money
+ 	}
+	return result
 }
